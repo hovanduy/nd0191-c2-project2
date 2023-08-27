@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  width: 70%;
+  margin: auto;
 }
 
 .App-logo {
@@ -35,4 +36,120 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-contents {
+  margin: auto;
+  margin:50px;
+}
+.qs-add {
+  border: 1px solid rgb(129, 155, 129);
+  margin: 0px 0px 10px 0px;
+  padding: 20px;
+  background-color: rgb(227, 231, 227);
+}
+
+.qs-list {
+  /* width: 70%; */
+  margin: auto;
+}
+
+.qs-list-item {
+  text-align: left;
+  border: 1px solid rgb(129, 155, 129);
+  margin: 0px 0px 10px 0px;
+  padding: 20px;
+  background-color: rgb(227, 231, 227);
+}
+.qs-item-title {
+  font-size: larger;
+}
+.qs-item-author {
+  font-size: medium;
+  margin-bottom: 0px;
+}
+.qs-item-timestamp {
+  font-size: small;
+}
+.qs-list-item-top {
+  display: flex;
+  justify-content: space-between;
+
+}
+.qs-item-option {
+  margin: 20px;
+}
+.qs-tabs {
+  
+}
+.qs-tabs-unanswered {
+  display: inline-block;
+  width: 50%;
+  background-color: rgb(24, 237, 35);
+  padding: 10px 0px;
+  border: 0px;
+  cursor: pointer;
+}
+.qs-tabs-unanswered-selected {
+  font-weight: bold;
+}
+.qs-tabs-answered {
+  display: inline-block;
+  width: 50%;
+  background-color: rgb(218, 226, 218);
+  padding: 10px 0px;
+  border: 0px;
+  cursor: pointer;
+}
+.qs-tabs-answered-selected {
+  font-weight: bold;
+}
+
+.qs-contents-unanswered {
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(24, 237, 35);
+}
+.qs-contents-answered {
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(218, 226, 218);
+}
+
+.voted {
+  color: blue;
+}
+.header {
+  padding-bottom: 30px;
+}
+.qs-detail {
+  display: flex;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.qs-vote {
+  display: flex;
+}
+
+.vote-option {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  margin-right: 50px;
+}
+
+table, th, td {
+  border: 1px solid gray;
+}
+
+.header-status {
+  display: flex;
+  margin: 20px 0;
+}
+.cta {
+  margin-left: 20px;
 }
