@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function Header() {
+export default function Header({ title }) {
 
   return (
     <div className='header'>
@@ -9,6 +9,7 @@ export default function Header() {
         <span className='link'><Link to='/add'>Create a new question</Link></span>
         <span className='link'><Link to='/leaderboard'>Leader Board</Link></span>
       </div>
+      <h4>{title}</h4>
     </div>
   )
 }

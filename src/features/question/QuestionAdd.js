@@ -34,7 +34,7 @@ function QuestionAdd() {
   return (
     <div>
       <div><UserInfo/></div>
-      <Header/>
+      <Header title='Create a new question' />
       <div>Would You Rather</div>
       <div className='qs-add'>
         <form >

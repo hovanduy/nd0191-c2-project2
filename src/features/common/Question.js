@@ -21,18 +21,18 @@ function Question({ flgAnswered, question }) {
       </div>
       <div className='qs-item-option'>
         <div className={votedOptionOne}>Option 1: {question.optionOne.text}</div>
-        <div><progress id="file" value={question.optionOne.votes.length} max={total}></progress> {rateOptionOne}%
-          ({question.optionOne.votes.length}/{total})</div>
-        <div>[{question.optionOne.votes.join(", ")}]</div>
+        {flgAnswered ? <div><progress id="file" value={question.optionOne.votes.length} max={total}></progress> {rateOptionOne}%
+          ({question.optionOne.votes.length}/{total})</div> : ''}
+        {flgAnswered ? <div>[{question.optionOne.votes.join(", ")}]</div> : ''}
       </div>
       <div className='qs-item-option'>
         <div className={votedOptionTwo}>Option 2: {question.optionTwo.text}</div>
-        <div><progress id="file" value={question.optionTwo.votes.length} max={total}></progress> {rateOptionTwo}%
-          ({question.optionTwo.votes.length}/{total})</div>
-        <div>[{question.optionTwo.votes.join(", ")}]</div>
+        {flgAnswered ? <div><progress id="file" value={question.optionTwo.votes.length} max={total}></progress> {rateOptionTwo}%
+            ({question.optionTwo.votes.length}/{total})</div> : ''}
+        {flgAnswered ? <div>[{question.optionTwo.votes.join(", ")}]</div> : ''}
       </div>
-      <span className='link'><Link to={`/questions/${question.id}`}>Detail</Link></span>
-      {!flgAnswered ? <span className='link'><Link to={`/vote/${question.id}`}>Vote</Link></span> : ''}
+      { flgAnswered ? <span className='link'><Link to={`/questions/${question.id}`}>Detail</Link></span> : ''}
+      {!flgAnswered ? <span className='link'><Link to={`/questions/v/${question.id}`}>Vote</Link></span> : ''}
       
     </div>
   );

@@ -25,7 +25,7 @@ function App() {
           <Route path='/home' element={<QuestionList />} />
           <Route path='/add' element={<QuestionAdd />} />
           <Route path='/questions/:question_id' element={<QuestionDetail />} />
-          <Route path='/vote/:question_id' element={<QuestionVote />} />
+          <Route path='/questions/v/:question_id' element={<QuestionVote />} />
           <Route path='/leaderboard' element={<QuestionLeaderBoard />} />
         </Route>
       </Route>

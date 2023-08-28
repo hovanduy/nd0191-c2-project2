@@ -59,6 +59,9 @@ Object {
               </a>
             </span>
           </div>
+          <h4>
+            Create a new question
+          </h4>
         </div>
         <div>
           Would You Rather
@@ -156,6 +159,9 @@ Object {
             </a>
           </span>
         </div>
+        <h4>
+          Create a new question
+        </h4>
       </div>
       <div>
         Would You Rather
